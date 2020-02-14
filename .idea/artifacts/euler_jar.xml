@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="jar" name="euler:jar">
+    <output-path>out/artifacts/euler_jar</output-path>
+    <root id="archive" name="euler.jar">
+      <element id="module-output" name="euler" />
+    </root>
+  </artifact>
+</component>

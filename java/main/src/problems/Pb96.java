@@ -1,6 +1,11 @@
+package problems;
+
+import com.sun.tools.javac.Main;
+
 import java.io.BufferedReader;
 import java.io.File;
 import java.io.FileReader;
+import java.nio.file.Paths;
 import java.util.*;
 
 
@@ -11,7 +16,8 @@ public class Pb96 {
 
 
     public static List<Sudoku> loadSudokus() throws Exception{
-        File file = new File("/Users/jmichalka/Desktop/5_funProgramming/java/euler/java/main/resources/p096_sudoku.txt");
+        //File file = new File("/Users/jmichalka/Desktop/5_funProgramming/java/euler/java/main/src/resources/p096_sudoku.txt");
+        File file = new File(Main.class.getClassLoader().getResource("p096_sudoku.txt").getPath());
         BufferedReader br = new BufferedReader(new FileReader(file));
 
         List<Sudoku> toReturn = new ArrayList<>();

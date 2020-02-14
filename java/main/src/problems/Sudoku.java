@@ -1,3 +1,5 @@
+package problems;
+
 public class Sudoku {
     int[][] fixedMatrix;
     int[][] floatingMatrix;
