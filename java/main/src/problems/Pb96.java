@@ -100,12 +100,8 @@ public class Pb96 {
                 if (!setAtLeastOneValue) {
                     //System.out.println(determineUnsetIntegersInThisSquare(0, currentMatrix));
                     currentSudoku = attemptBruteForceSolve(currentSudoku, allPossibilities);
-                    if (validateCurrentBoard(currentSudoku.getMatrix())) {
-                        System.out.println("well damn that was easy");
-                    } else {
-                        unsolved++;
-                        System.out.println("Matrix: " + i + " will require additional logic.");
-                        maxLoops = 1;
+                    if (!validateCurrentBoard(currentSudoku.getMatrix())) {
+                        System.out.println("Something went wrong.");
                     }
                 }
                 maxLoops--;
